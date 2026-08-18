@@ -10,9 +10,4 @@ Healthcare access, particularly in Aboriginal communities, is significantly more
 - Part A: Descriptive and Geospatial: This will utilise mapping and data analysis to investigate healthcare accessibility across communities based on key contributing factors such as geographical distance, socioeconomic disadvantage, and the presence of ACCHOs.
 - Part B: Machine Learning and Research: This will develop a machine learning model to classify community-level accessibility, and then discover which factors are more strongly associated with communities experiencing greater barriers with healthcare access.
 
-### Data Sources:
-Throughout this project I will record all the data sources investigated and record whether they were used or rejected, along with the reasoning behind that status.
-The datasets used remain under their original licensing terms, which will be stated for clarity.
-
-
 
