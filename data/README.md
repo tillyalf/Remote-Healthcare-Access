@@ -9,3 +9,13 @@ This dataset I have built details the locations of ACCHO services across Austral
 
 I recorded this through Excel recording seperate columns for name, state, address, suburb_town, postcode, phone, and notes. This notes section was mainly used for the more remote areas, in which the address is via another town, or for any small address mistakes I noticed during my process.
 
+### SA2 and Remoteness
+https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs/edition-3-july-2021-june-2026/access-and-downloads/digital-boundary-files 02.10.26
+
+### Census Data
+https://www.abs.gov.au/census/find-census-data/datapacks 02.10.26
+
+### SIEFA Indexes
+https://www.abs.gov.au/statistics/people/people-and-communities/socio-economic-indexes-areas-seifa-australia/latest-release 02.10.26
+
+
