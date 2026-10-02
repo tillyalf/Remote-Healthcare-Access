@@ -24,7 +24,7 @@ df = pd.read_excel(
 df["postcode"] = df["postcode"].str.zfill(4)
 
 # testing
-df = df.head(10)
+# df = df.head(10)
 
 # Nomainatim geocoder converts the addresses to coordinates, adding timeout due to timeout issue.
 geolocator = Nominatim(
