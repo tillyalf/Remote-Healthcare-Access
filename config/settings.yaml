@@ -1,0 +1,31 @@
+# Project settings. Paths are relative to the repo root.
+crs:
+  storage: "EPSG:7844"   # GDA2020 geographic: used for stored files
+  metric: "EPSG:3577"    # GDA94 / Australian Albers: used for distance/area calculations
+
+paths:
+  raw: data/raw
+  interim: data/interim
+  processed: data/processed
+  asgs_main: data/raw/ASGS_2021_Main_Structure_GDA2020.gpkg
+  asgs_ra: data/raw/ASGS_Ed3_2021_RA_GDA2020.gpkg
+  seifa: data/raw/SEIFA.xlsx
+  # Extracted from 2021_GCP_SA2_for_AUS_short-header.zip (file names match metadata).
+  # NB: the older data/raw/census_data/ copy has every file labelled one table too high.
+  census_dir: "data/raw/census_gcp_2021_sa2/2021 Census GCP Statistical Area 2 for AUS"
+  census_metadata: data/raw/census_gcp_2021_sa2/Metadata/Metadata_2021_GCP_DataPack_R1_R2.xlsx
+  mb_counts: data/raw/mesh_block_counts_2021/2026-11-25/Mesh_Block_Counts_2021.xlsx
+  # Private, sensitive: read from local disk only, never copied into the repo.
+  accho: data/processed/NACCHO_locations_geocoded.xlsx
+  sa2_master: data/processed/sa2_master.parquet
+  sa2_master_qa: data/processed/sa2_master_qa.json
+  sa2_master_columns: data/processed/sa2_master_columns.csv
+
+integrate:
+  ra_split_threshold: 0.90        # ra_split = dominant-class pop share < this (ra_pop_share is stored)
+  accho_nearest_max_m: 1000       # fallback snap distance for ACCHO points outside every SA2 polygon
+
+routing:
+  endpoint: null         # e.g. http://localhost:5000 (self-hosted OSRM), Milestone 4
+
+thresholds: {}

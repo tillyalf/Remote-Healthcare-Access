@@ -1,0 +1,51 @@
+# One entry per source. Mirror of data/README.md raw-data log.
+# TODO: fill in URLs / retrieved dates for the ABS downloads.
+accho_locations:
+  description: Manually compiled ACCHO locations (sensitive, never committed)
+  urls:
+    - https://www.naccho.org.au/locations/
+    - https://healthinfonet.ecu.edu.au/key-resources/health-professionals/health-workers/map-of-aboriginal-and-islander-healthmedical-services/
+  retrieved: ["18.08.26", "19.08.26"]
+  access: manual
+  licence: n/a, do not redistribute
+
+asgs_main_structure:
+  description: ABS ASGS Ed. 3 (2021) Main Structure, GDA2020 GeoPackage (SA1/SA2/MB...)
+  url: null
+  retrieved: null
+  access: manual download
+  licence: CC BY 4.0
+
+asgs_remoteness:
+  description: ABS ASGS Ed. 3 (2021) Remoteness Areas, GDA2020 GeoPackage
+  url: null
+  retrieved: null
+  access: manual download
+  licence: CC BY 4.0
+
+seifa_2021:
+  description: ABS SEIFA 2021, SA2 level
+  url: null
+  retrieved: null
+  access: manual download
+  licence: CC BY 4.0
+
+census_2021_gcp_sa2:
+  description: ABS 2021 Census General Community Profile DataPack, SA2, AUST (short header)
+  file: 2021_GCP_SA2_for_AUS_short-header.zip -> data/raw/census_gcp_2021_sa2/
+  url: null
+  retrieved: null          # zip downloaded 2026-10-02; extracted 2026-11-25
+  access: manual download
+  licence: CC BY 4.0
+  notes: Table numbers verified against Metadata/Metadata_2021_GCP_DataPack_R1_R2.xlsx
+
+mesh_block_counts_2021:
+  description: ABS Census 2021 Mesh Block Counts (usual resident persons, dwellings per MB)
+  url: https://www.abs.gov.au/census/guide-census-data/mesh-block-counts/2021/Mesh%20Block%20Counts%2C%202021.xlsx
+  page: https://www.abs.gov.au/census/guide-census-data/mesh-block-counts/latest-release
+  released: 2022-06-28
+  retrieved: 2026-11-25
+  path: data/raw/mesh_block_counts_2021/2026-11-25/Mesh_Block_Counts_2021.xlsx
+  sha256: 1ab520c2ff0e07ca88729258c30ee9f7a7133df113a81bac94812582f3b540a3
+  access: direct download
+  licence: CC BY 4.0
