@@ -217,8 +217,29 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
-# Project data (raw and processed data may contain compiled contact info)
-data/raw/
-data/processed/
+# ---------------------------------------------------------------------------
+# Project data: NEVER committed (see CLAUDE.md "Data handling rules")
+# ---------------------------------------------------------------------------
+data/*
+!data/README.md
 *.xlsx
+*.xls
 *.csv
+*.parquet
+*.gpkg
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+*.geojson
+
+# Anything ACCHO / NACCHO related, case-insensitive, any extension, anywhere
+*[Aa][Cc][Cc][Hh][Oo]*
+# ...except source modules/tests (code only, never data; tests use synthetic fixtures)
+!src/rha/**/accho.py
+!tests/**/test_*accho*.py
+
+# Notebook checkpoints / outputs can leak data: keep exploration local
+notebooks/**/*.html
+notebooks/**/outputs/
